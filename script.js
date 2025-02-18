@@ -6,6 +6,8 @@ const yesBtn = document.getElementById('yesBtn');
 const yayScreen = document.getElementById('yayScreen');
 const container = document.getElementById('container');
 
+const namesList = []; // List to store names
+
 // Width of the screen
 const screenWidth = window.innerWidth;
 
@@ -29,4 +31,15 @@ function handleNo() {
 function handleYes() {
     yayScreen.classList.remove('hidden');
     container.classList.add('hidden');
+
+    // Ask for the user's name
+    const name = prompt("Please enter your name:");
+
+    // If the user provides a name, store it in the list
+    if (name) {
+        namesList.push(name);
+    }
+
+    // After collecting names, log the list (you can replace this with your preferred action)
+    console.log("Names collected so far:", namesList);
 }
