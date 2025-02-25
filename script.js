@@ -46,5 +46,5 @@ function handleYes() {
     // After 3 seconds, redirect to the flower shop
     setTimeout(() => {
         window.location.href = 'https://www.exampleflowershop.com'; // Replace with your flower shop URL
-    }, 3000); // 3000ms = 3 seconds
+    }, 30000); // 3000ms = 3 seconds
 }
